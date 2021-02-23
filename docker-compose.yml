@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    container_name: armax-OPCDA-wrapper
+    restart: always
+    build: ./
+    ports:
+      - "85:85"
+    command: python3 app.py
